@@ -1,0 +1,7 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: 'scribbly_aut'
+    ports:
+      - '5432:5432'
