@@ -2,6 +2,8 @@ services:
   postgres:
     image: postgres:17-alpine
     environment:
-      POSTGRES_DB: 'scribbly_aut'
+      POSTGRES_user: postgres
+      POSTGRES_PASSWORD: 123
+      POSTGRES_DB: 'scribbly_auth'
     ports:
       - '5432:5432'
